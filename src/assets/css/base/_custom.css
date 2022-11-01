@@ -1,0 +1,35 @@
+/* place for custom / new css variables */
+:root {}
+
+[data-theme="dark"],
+[data-theme="dark"] :root {}
+
+
+.btn {
+    background: black;
+    padding: 10px;
+    margin-top: 5px;
+    margin-right: 10px;
+    color: white;
+}
+
+.VideoControlButton {
+    /* flex-center w-10 h-10 bg-black/80 border-rad-3 */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background-color: rgba(0, 0, 0, 0.9);
+    border-radius: var(--border-rad-4);
+    transition: background-color 0.14s ease-in;
+}
+
+.VideoControlButton:hover {
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.VideoControlButton:active {
+    transition: none !important;
+    background-color: rgba(0, 0, 0, 1);
+}
